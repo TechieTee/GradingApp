@@ -1,32 +1,35 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+   <form action="post">
+      <input type="text" placeholder="subject" id="subject">
+     <input type="text" placeholder="score" id="score">
+     <textarea name="grade" id="grade" cols="10" rows="1" placeholder="grade"></textarea>
+     
+      <input type="submit" value="Enter" id="generate">
+      <!-- <input type="submit" value="additem" id="additem"> -->
+      <input type="submit" value="CalcCGPA" id="calcCGPA">
+      <input type="submit" value="Clear" id="clear">
+    </form> 
 
-
-  <div id="myDIV" class="header">
-    <h2 style="margin:5px">List of groceries to buy</h2>
-    <form id="form">
-
-      <input type="text" placeholder="New item..." id="newItem">
-
-      <button type="submit" id="addItem" class="addItem">Add</button>
-
-    </form>
-  </div>
-
-  <ul id="list">
-    <!-- <li>Todo One <button id="del" style="float: right;" class="del">x</button></li> -->
-
-  </ul> 
- 
-  <script src="js/script.js"></script>
+    <!-- <div class="all">
+        <span id="div1"></span>
+        <span id="div2"></span>
+        <span id="div3"></span>
+    </div> -->
+    <div id="Warning"></div>
+    <div id="cgpa"></div>
+    <div id="NewRow"></div>
+    <ul id="list">
+        <!-- <li>Todo One <button id="del" style="float: right;" class="del">x</button></li> -->
+    
+      </ul> 
+    <script src="js/script.js"></script>
 </body>
-
-
 </html>

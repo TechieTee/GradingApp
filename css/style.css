@@ -1,0 +1,67 @@
+body{
+    background-color: aqua;
+}
+
+#Warning{
+  
+    height: 20px;
+    width: 100%;
+   
+}
+
+ #list{
+    list-style-type: none;
+    margin-top: 150px;
+    
+} 
+
+.stylescore{
+    margin-left: 20%;
+  
+}
+
+.stylescoretwo{
+    margin-left: 40%;
+    
+    
+}
+
+
+
+#grade{
+    display: none;
+}
+
+.all{
+   margin-top: 150px;
+
+}
+
+#div1{
+    height: 5px;
+    width: 10%;
+   background-color: bisque;
+   margin-left: 5%;
+   padding: 5%;
+}
+
+#div2{
+    height: 5px;
+    width: 10%;
+   background-color: burlywood;
+   margin-left: 15%;
+   padding: 5%;
+   
+}
+
+#div3{
+    height: 5px;
+    width: 10%;
+   background-color: rgb(87, 113, 119);
+   margin-left: 10%;
+   padding: 5%;
+}
+Excellent understanding of the entire web development process (design, development and deployment)
+SEO principles
+
+Knowledge of browser testing and debugging
