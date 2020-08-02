@@ -5,6 +5,8 @@ var sco = document.querySelector("#score");
 var gra = document.querySelector("#grade");
 var gen = document.querySelector("#generate");
 var list = document.querySelector("#list");
+let studentarray = [];
+
 
 // var div1 = document.querySelector("#div1");
 // var div2 = document.querySelector("#div2");
@@ -29,6 +31,7 @@ gen.addEventListener('click', (e) => {
    cgpa.innerHTML = "";
    
  } else {
+    
         if (sco.value <= 35) {gra.value = "F"}
    else if (sco.value <= 40 && sco.value > 35) {gra.value = "E"}
    else if (sco.value <= 50 && sco.value > 40) {gra.value = "D"}
@@ -40,6 +43,11 @@ gen.addEventListener('click', (e) => {
     
      return false;
    }
+
+   
+   studentinfo = {studentcoursevalue:sub.value, studentscorevalue:sco.value, studentgradevalue:gra.value}
+   studentarray.push(studentinfo);
+   
    oya();
       warn.innerHTML = "";
    cgpa.innerHTML = "";
@@ -109,6 +117,7 @@ warn.innerHTML = "";
 
 calc.addEventListener('click', (e) => {
    e.preventDefault();
+   console.log(studentarray);
    cgpa.innerHTML = "Coming soon!";
    warn.innerHTML = "";
 })
